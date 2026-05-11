@@ -1,0 +1,42 @@
+gbifID	type	format	identifier	references	title	description	source	audience	created	creator	contributor	publisher	license	rightsHolder
+5026194658	StillImage	image/jpeg	http://live.staticflickr.com/8335/8376665560_b949273904_b.jpg	https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-1016987414									Copyright by the creator. For license and creator details, see https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-1016987414.	
+5024679971	StillImage	image/jpeg	https://live.staticflickr.com/65535/49792285542_5f5da8c27f_b.jpg	https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-1198451382									Copyright by the creator. For license and creator details, see https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-1198451382.	
+5023017686	StillImage	image/jpeg	https://live.staticflickr.com/65535/51979321169_92d3023307_b.jpg	https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-459950086									Copyright by the creator. For license and creator details, see https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-459950086.	
+5023017686	StillImage	image/jpeg	https://live.staticflickr.com/65535/51979607325_131e2f2471_b.jpg	https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=795204123									Copyright by the creator. For license and creator details, see https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=795204123.	
+5022606656	StillImage	image/jpeg	https://live.staticflickr.com/65535/51979076256_d4f7b5298a_b.jpg	https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=2137233912									Copyright by the creator. For license and creator details, see https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=2137233912.	
+5022606656	StillImage	image/jpeg	https://live.staticflickr.com/65535/51979079731_4ea40c614d_b.jpg	https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-980548496									Copyright by the creator. For license and creator details, see https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=-980548496.	
+5021982984	StillImage	image/jpeg	http://live.staticflickr.com/2814/9483179369_53750ea614_b.jpg	https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=1830561049									Copyright by the creator. For license and creator details, see https://nabu-naturgucker-beobachtungen.de/?sprache=en&bild=1830561049.	
+2562042041				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24131124										
+2562041529				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24116320										
+2562041503				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24131057										
+2562038898				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24131157										
+2562037441				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24105278										
+2562037067				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24128155										
+2562036769				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24131290										
+2562032836				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=24131023										
+2005722820	StillImage	image/jpeg	http://arctos.database.museum/media/10517044?open		View of cranium, ventral.	View of cranium, ventral.	http://arctos.database.museum/media/10515498		2014-01-16T00:00:00Z					
+2005722820	StillImage	image/jpeg	http://arctos.database.museum/media/10517042?open		View of specimen, entire.	View of specimen, entire.	http://arctos.database.museum/media/10515496		2014-01-16T00:00:00Z					
+2005722820	StillImage	image/jpeg	http://arctos.database.museum/media/10517045?open		View of mandible.	View of mandible.	http://arctos.database.museum/media/10515499		2014-01-16T00:00:00Z					
+2005722820				http://arctos.database.museum/MediaSearch.cfm?collection_object_id=25765866										
+2005722820	StillImage	image/jpeg	http://arctos.database.museum/media/10517043?open		View of cranium, dorsal.	View of cranium, dorsal.	http://arctos.database.museum/media/10515497		2014-01-16T00:00:00Z					
+2005722820	StillImage	image/jpeg	http://arctos.database.museum/media/10517046?open		View of cranium, lateral.	View of cranium, lateral.	http://arctos.database.museum/media/10515500		2014-01-16T00:00:00Z					
+1919692451	StillImage		https://data.nhm.ac.uk/media/e2b2f506-60e0-4fd9-a762-68f7fd3171f6		MA24 Mammal register scan								http://creativecommons.org/licenses/by/4.0/	The Trustees of the Natural History Museum, London
+1147241725				http://macaulaylibrary.org/audio/55398										
+1147238922				http://macaulaylibrary.org/video/415988										
+1147224938				http://macaulaylibrary.org/video/420179										
+1147221315				http://macaulaylibrary.org/video/420215										
+1147195768				http://macaulaylibrary.org/video/411511										
+1147192193				http://macaulaylibrary.org/video/415996										
+1147190794				http://macaulaylibrary.org/video/420217										
+1147188070				http://macaulaylibrary.org/video/415994										
+1147180587				http://macaulaylibrary.org/video/417030										
+1147180105				http://macaulaylibrary.org/video/415990										
+1147167334				http://macaulaylibrary.org/video/420211										
+1147153904				http://macaulaylibrary.org/audio/55397										
+1147144380				http://macaulaylibrary.org/video/415989										
+1147125049				http://macaulaylibrary.org/video/415993										
+1147120302				http://macaulaylibrary.org/video/415997										
+1147095192				http://macaulaylibrary.org/audio/55396										
+1147053061				http://macaulaylibrary.org/video/420213										
+1147051572				http://macaulaylibrary.org/audio/42257										
+1147049290				http://macaulaylibrary.org/video/420216										

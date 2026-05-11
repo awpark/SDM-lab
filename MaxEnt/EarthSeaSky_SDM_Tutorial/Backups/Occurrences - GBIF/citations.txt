@@ -1,0 +1,46 @@
+When using this dataset please use the following citation and pay attention to the rights documented in rights.txt:
+Brennan C (2020). CMNH Mammals. Cleveland Museum of Natural History. Occurrence dataset https://doi.org/10.15468/gtgz2j accessed via GBIF.org on 2025-01-23.
+Dillman C, Dardia C (2018). CUMV Mammal Collection. Version 27.17. Cornell University Museum of Vertebrates. Occurrence dataset https://doi.org/10.15468/kkgkne accessed via GBIF.org on 2025-01-23.
+Millen B, Seymour K (2018). Palaeobiology - Vertebrate Comparative Osteology Collection - Royal Ontario Museum. Version 20.8. Royal Ontario Museum. Occurrence dataset https://doi.org/10.15468/d6anwc accessed via GBIF.org on 2025-01-23.
+Sánchez Cordero Dávila V, Comisión nacional para el conocimiento y uso de la biodiversidad C (2024). Digitalización y Sistematización de las Colecciones Biológicas Nacionales del Instituto de Biología, UNAM (vertebrados). Version 1.7. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/7fhnk3 accessed via GBIF.org on 2025-01-23.
+Natural History Museum (2025). Natural History Museum (London) Collection Specimens. Occurrence dataset https://doi.org/10.5519/qd.f4i40jj0 accessed via GBIF.org on 2025-01-23.
+New Brunswick Museum (2024). New Brunswick Museum - Mammals. Occurrence dataset https://doi.org/10.15468/8raqsw accessed via GBIF.org on 2025-01-23.
+naturgucker.de. NABU|naturgucker. Occurrence dataset https://doi.org/10.15468/uc1apo accessed via GBIF.org on 2025-01-23.
+San Diego Natural History Museum. Mammal specimens. Version 1.0. Occurrence dataset https://doi.org/10.15468/evdcls accessed via GBIF.org on 2025-01-23.
+Galbreath K (2024). Northern Michigan University (NMU) Mammal Specimens (Arctos). Version 1.84. Northern Michigan University. Occurrence dataset https://doi.org/10.15468/zazfgp accessed via GBIF.org on 2025-01-23.
+Braker E (2025). UCM Mammal Collection (Arctos). University of Colorado Museum of Natural History. Occurrence dataset https://doi.org/10.15468/rwtmwf accessed via GBIF.org on 2025-01-23.
+Scholes III, Ph.D. E (2015). Macaulay Library Audio and Video Collection. Cornell Lab of Ornithology. Occurrence dataset https://doi.org/10.15468/ckcdpy accessed via GBIF.org on 2025-01-23.
+Roberts D (2024). CHAS Mammalogy Collection (Arctos). Version 13.91. Chicago Academy of Sciences. Occurrence dataset https://doi.org/10.15468/ebxyjx accessed via GBIF.org on 2025-01-23.
+Senckenberg. Collection Mammalia SMF. Occurrence dataset https://doi.org/10.15468/igaciv accessed via GBIF.org on 2025-01-23.
+Bradley J (2025). UWBM Mammalogy Collection (Arctos). University of Washington Burke Museum. Occurrence dataset https://doi.org/10.15468/qziy3w accessed via GBIF.org on 2025-01-23.
+UNIBIO, IBUNAM. CNMA/Colección Nacional de mamíferos. Occurrence dataset https://doi.org/10.15468/rchosl accessed via GBIF.org on 2025-01-23.
+Schmidt C (2016). FHSM Mammals Collection. Fort Hays Sternberg Museum of Natural History. Occurrence dataset https://doi.org/10.15468/7trvzo accessed via GBIF.org on 2025-01-23.
+Grant S, Webbink K, Jones J, Ferguson A (2020). Field Museum of Natural History (Zoology) Mammal Collection. Version 9.18. Field Museum. Occurrence dataset https://doi.org/10.15468/n4zgxw accessed via GBIF.org on 2025-01-23.
+Wilson D E, Reeder D, Sautter G (2005). Order Rodentia - Family Sciuridae. Plazi.org taxonomic treatments database. Checklist dataset https://doi.org/10.15468/ha2jns accessed via GBIF.org on 2025-01-23.
+Shugart G (2023). PSM Vertebrates Collection. Version 8.4. Puget Sound Museum of Natural History. Occurrence dataset https://doi.org/10.15468/3oaz5o accessed via GBIF.org on 2025-01-23.
+Unitt P (2020). SDNHM Mammology Collection. Version 1.3. San Diego Natural History Museum. Occurrence dataset https://doi.org/10.15468/estih7 accessed via GBIF.org on 2025-01-23.
+California Academy of Sciences: CAS Mammalogy (MAM) https://doi.org/10.15468/dhbozg accessed via GBIF.org on 2025-01-23.
+MNHN, Chagnoux S (2025). The mammals collection (ZM) of the Muséum national d'Histoire naturelle (MNHN - Paris). Version 43.397. MNHN - Museum national d'Histoire naturelle. Occurrence dataset https://doi.org/10.15468/j0xw9i accessed via GBIF.org on 2025-01-23.
+Molina K (2016). UCLA Donald R. Dickey Bird and Mammal Collection. UCLA-Dickey Collection (UCLA-Dickey). Occurrence dataset https://doi.org/10.15468/qv6cxl accessed via GBIF.org on 2025-01-23.
+Opitz C (2020). SUI Vertebrate Collection. Version 6.1. University of Iowa Museum of Natural History. Occurrence dataset https://doi.org/10.15468/xpsbyo accessed via GBIF.org on 2025-01-23.
+Kawada S (2024). Mammal collection of National Museum of Nature and Science. National Museum of Nature and Science, Japan. Occurrence dataset https://doi.org/10.15468/8jayua accessed via GBIF.org on 2025-01-23.
+UMMZ Mammals Data Group, LSA IT A (2025). University of Michigan Museum of Zoology, Division of Mammals. Version 8.81. University of Michigan Museum of Zoology. Occurrence dataset https://doi.org/10.15468/dx3rcj accessed via GBIF.org on 2025-01-23.
+McClennen M, Jenkins J, Uhen M (2024). Paleobiology Database. Version 1.3. Paleobiology Database. Occurrence dataset https://doi.org/10.15468/jfqhiu accessed via GBIF.org on 2025-01-23.
+Khidas K, Blades R (2025). Canadian Museum of Nature Mammal Collection. Version 1.148. Canadian Museum of Nature. Occurrence dataset https://doi.org/10.15468/okgapc accessed via GBIF.org on 2025-01-23.
+Szabo I, Stinson C, Pitblado M (2024). Cowan Tetrapod Collection - Mammals. Version 5.2. University of British Columbia. Occurrence dataset https://doi.org/10.15468/qgdpad accessed via GBIF.org on 2025-01-23.
+Creuwels J (2017). Naturalis Biodiversity Center (NL) - Museum collection digitized at storage unit level. Naturalis Biodiversity Center. Occurrence dataset https://doi.org/10.15468/17e8en accessed via GBIF.org on 2025-01-23.
+Abraczinskas L (2016). MSU Mammalogy, Ornithology and Vertebrate Paleontology Collections. Version 8.1. Michigan State University Museum. Occurrence dataset https://doi.org/10.15468/xypr72 accessed via GBIF.org on 2025-01-23.
+Knapp G (2012). ISU Mammals. Illinois State University. Occurrence dataset https://doi.org/10.15468/sqbpak accessed via GBIF.org on 2025-01-23.
+Reiss J (2017). HSU Vertebrate Museum Mammals Collection. Version 2.3. Humboldt State University. Occurrence dataset https://doi.org/10.15468/p7bz9e accessed via GBIF.org on 2025-01-23.
+Tir J, Cassidy K (2024). Washington State University, Charles R. Conner Museum Mammal Specimens (Arctos). Version 1.7. Charles R. Conner Museum. Occurrence dataset https://doi.org/10.15468/75jmhs accessed via GBIF.org on 2025-01-23.
+Szuma E (2017). Mammal Collection. Mammal Research Institute, Polish Academy of Sciences. Occurrence dataset https://doi.org/10.15468/vbfpcd accessed via GBIF.org on 2025-01-23.
+University of Central Oklahoma (2025). University of Central Oklahoma Collection of Mammals. Occurrence dataset https://doi.org/10.15468/2rt5e4 accessed via GBIF.org on 2025-01-23.
+Esselstyn J (2017). LSUMZ Mammals Collection. Louisiana State University Museum of Natural Science. Occurrence dataset https://doi.org/10.15468/wxiqf6 accessed via GBIF.org on 2025-01-23.
+Johannessen L E, Voje K L (2025). NHMO Mammal collection. Version 31.409. University of Oslo. Occurrence dataset https://doi.org/10.15468/knvqao accessed via GBIF.org on 2025-01-23.
+Bogiatto R (2016). CSUC Vertebrate Collection. Version 4.1. California State University, Chico Vertebrate Museum. Occurrence dataset https://doi.org/10.15468/hryvlt accessed via GBIF.org on 2025-01-23.
+Fahy K (2016). SBMNH Vertebrate Zoology. Version 5.1. Santa Barbara Museum of Natural History. Occurrence dataset https://doi.org/10.15468/amfnkq accessed via GBIF.org on 2025-01-23.
+Millen B, Lim B (2018). Mammalogy Collection - Royal Ontario Museum. Version 11.5. Royal Ontario Museum. Occurrence dataset https://doi.org/10.15468/2rlrvh accessed via GBIF.org on 2025-01-23.
+Jennings R (2024). WNMU Mammal Collection (Arctos). Version 32.91. Western New Mexico University. Occurrence dataset https://doi.org/10.15468/gcld3d accessed via GBIF.org on 2025-01-23.
+Trombone T (2016). AMNH Mammal Collections. American Museum of Natural History. Occurrence dataset https://doi.org/10.15468/wu3poe accessed via GBIF.org on 2025-01-23.
+Labedz T (2021). University of Nebraska State Museum Mammals Collection. University of Nebraska State Museum. Occurrence dataset https://doi.org/10.15468/d8ps8f accessed via GBIF.org on 2025-01-23.
+McKenzie K, McKechnie I (2024). University of Victoria - Zooarchaeology Lab Collection. Version 1.12. University of Victoria. Occurrence dataset https://doi.org/10.5886/jej09d accessed via GBIF.org on 2025-01-23.
