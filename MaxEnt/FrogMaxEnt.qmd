@@ -4,3 +4,166 @@ author: "Kane Moser, Carlos Molinero, Nikki Castleberry"
 format: html
 editor: visual
 ---
+
+```{r}
+library(cowplot) # combining ggplots
+library(enmSdmX) # SDMing
+library(geodata) # geographic data
+library(ggplot2) # plotting
+library(omnibus) # helper functions
+library(scales)  # transparency/rescaling
+library(terra)   # GIS
+
+# Occurrences:
+recordsNoDups <- readRDS('resources/EarthSeaSky_SDM_Tutorial/Backups/Occurrences - GBIF/06 Species Records - Eliminated All But One Record Per Cell.rds')
+
+# Range map:
+rangeMap <- vect('resources/EarthSeaSky_SDM_Tutorial/Backups/Urocitellus columbianus Range Map - IUCN/urocitellusColumbianus_iucnRangeMap.shp')
+
+# North America:
+northAmerica <- vect('resources/EarthSeaSky_SDM_Tutorial/Backups/Political - GADM/North America.rds')
+
+# Study region:
+studyRegion <- readRDS('resources/EarthSeaSky_SDM_Tutorial/Backups/Study Region/Study Region.rds')
+
+# Elevation and climate rasters:
+elevation <- rast('data/ELEVATION/elevation.tif')
+currentClim <- rast('data/WORLDCLIM/currentClim.tif')
+futureClim <- rast('data/WORLDCLIM/futureClim.tif')
+# Variables
+predictors <- readRDS('resources/EarthSeaSky_SDM_Tutorial/Selected Predictors.rds')
+
+# Background sites
+randomBgEnv <- readRDS('resources/EarthSeaSky_SDM_Tutorial/Backups/Background Sites/Random Background Sites across Study Region.rds')
+
+# Predictors
+predictors <- readRDS('resources/EarthSeaSky_SDM_Tutorial/Selected Predictors.rds')
+
+```
+
+The code below 1) combines the environmental part of this table from the occurrences and random background sites, then 2) creates a vectors of 1s and 0s, and finally 3) combines them together into the SWD format.
+
+```{r}
+# subset environment at occurrence sites to selected predictors
+recordsEnv <- as.data.frame(recordsNoDups) # convert SpatVector to data frame
+recordsEnv <- recordsEnv[ , paste0('bio', 1:19)] # selecting all BIOCLIMs
+
+# subset environment at background sites
+randomBgEnvSelected <- randomBgEnv[ , paste0('bio', 1:19)] # selecting all BIOCLIMS
+
+# combine environmental data frames
+presRandomBgEnv <- rbind(recordsEnv, randomBgEnvSelected)
+
+# vector of 1s and 0s, one per occurrence/background site
+onesZeros <- c(
+    rep(1, nrow(recordsNoDups)),
+    rep(0, nrow(randomBgEnv))
+)
+
+
+onesZeros <- data.frame(presBg = onesZeros)
+
+# combine vector with environmental table
+trainDataRandomBg <- cbind(onesZeros, presRandomBgEnv)
+# save
+dirCreate('./Collated Occurrences & BG Sites') # omnibus package
+saveRDS(trainDataRandomBg, './Collated Occurrences & BG Sites/Random BG.rds')
+# view first and last 6 rows
+head(trainDataRandomBg)
+```
+
+Let's train our first SDM!
+
+**NOTE for Mac Users**: The trainMaxEnt() function requires rJava, plus some other Java stuff, to be set up properly on a Mac. I am sorry, but I do not know how to fix this! However, you can replace trainMaxEnt() with trainMaxNet() in the code above and in all following code and exercises. Max**Net** is theoretically the same as Max**Ent**, but the numerical solver is slightly different, and it treats some of the terms differently. This means in subsequent exercises, if you use trainMaxNet(), you may get somewhat different results. This is fine, as there is no “best” MaxEnt. If you use trainMaxNet() in your research, be sure to report that you used the MaxNet version of MaxEnt, not MaxEnt per se, and cite [Phillips et al. 2017](http://dx.doi.org/10.1111/ecog.03049).
+
+Later we will spend time on evaluating the model’s accuracy, but for now we’ll just focus on the model output. Let’s write the model output as a raster prediction then view it
+
+The following simple model uses bio1, bio7, bio15, bio18 (annual mean temp, temp annual range, precip seasonality (variation coef) and precip warmest quarter)
+
+```{r}
+# calibrate the model
+simpleModel <- trainMaxNet(
+    data = trainDataRandomBg,
+    presBg = 'presBg',
+    preds = predictors,
+    regMult = 1,
+    testClasses = FALSE
+)
+```
+
+Note to self: maybe read about maxent vs maxnet? If feeling masochistic
+
+```{r}
+# burn predictions to a raster
+simpleMap <- predictEnmSdm(
+    simpleModel,
+    currentClim
+)
+
+names(simpleMap) <- 'simple_model'
+# create subfolder for this model
+dirCreate('./Models') # omnibus package
+
+# save model
+saveRDS(simpleModel, './Models/Simple Model.rds')
+
+# save raster
+writeRaster(simpleMap, './Models/simple_model_1970_2000.tif', overwrite = TRUE)
+
+```
+
+Let’s take a look!
+
+```{r}
+# plot output
+plot(studyRegion, border = NA, main = 'Simple Model') # set plot extent
+plot(simpleMap, add = TRUE)
+plot(rangeMap, border = 'white', add = TRUE)
+plot(recordsNoDups, pch = 1, col = 'red', add = TRUE)
+```
+
+What do you see? *Recall that the range map is probably drawn at a coarse scale and ultimately derived from specimen data itself*, so using it as a visual benchmark is circular. However, it can give us a general idea of how much the model is doing. The model mainly predicts that areas close to lots of presences are suitable, whereas areas farther away are not. This could be indicative of a real trend, but also due to undercollection in certain areas, especially in the north.
+
+Also note that the model does predict that some areas far from the range are suitable, even though there are not presences there. Depending on your goals, this may or may not be an error. If you’re modeling the distribution, it’s an “overprediction,” in the sense that it’s predicting presence where there is none. But if you’re modeling the geographic representation of the *niche*, it may not be–the species could actually live there, but perhaps it doesn’t due to dispersal limitation, competition, disease, or predators.
+
+### A "full" model
+
+Let’s see what would happen if we used the other all 19 BIOCLIM variables then compare this to the “simple” model we just generated using brain-selected variables.
+
+```{r}
+# calibrate the model... takes longer because using more predictors
+fullModel <- trainMaxNet(
+    data = trainDataRandomBg,
+    presBg = 'presBg',
+    preds = paste0('bio', 1:19), # the only part we need to change
+    regMult = 1,
+    testClasses = FALSE
+)
+
+# burn predictions to a raster
+fullMap <- predictEnmSdm(
+    fullModel,
+    currentClim
+)
+
+names(fullMap) <- 'full_model'
+
+par(mfrow = c(1, 2)) # create two panels for plotting
+
+# plot output: simple model
+plot(studyRegion, border = NA, main = 'Simple Model') # set plot extent
+plot(simpleMap, add = TRUE)
+plot(rangeMap, border = 'white', add = TRUE)
+plot(recordsNoDups, pch = 1, col = 'red', add = TRUE)
+
+# plot output: complex model
+plot(studyRegion, border = NA, main = 'Complex Model') # set plot extent
+plot(fullMap, add = TRUE)
+plot(rangeMap, border = 'white', add = TRUE)
+plot(recordsNoDups, pch = 1, col = 'red', add = TRUE)
+
+```
+
+Assuming we are interested in recreating the species’ range, the simple model seems to overestimate suitability a bit–there are more places away from the range that appear to be suitable. This illustrates a tradeoff between number of variables and overestimation. In a sense, each variable represents a switch for the model to say “no, the species can’t be here.” If we have fewer switches, we have fewer ways to rule out particular environments.
+
+This said, it’s rather remarkable we can get maps that are very similar between a model that uses just 4 brain-selected predictors and 19 machine-selected predictors.
